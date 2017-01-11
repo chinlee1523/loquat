@@ -5,9 +5,8 @@ namespace Loquat\Script\Crontab;
 class Exec extends \Loquat\Lib\Script{//获得执行脚本的命令
     const _PRG_CNT_LIMITED_ = -1;//
     function run(){
-        global $argv;
-        $funcName = "get".$argv[2];
-        $initFuncName = "init".$argv[2];
+        $funcName = "get".$this->argv[2];
+        $initFuncName = "init".$this->argv[2];
         if(!method_exists("\\Loquat\\Config\\Crontab",$funcName)){
             //add log
             return;
