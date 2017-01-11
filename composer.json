@@ -1,7 +1,7 @@
 {
-    "name":             "carrotli/loquat",
+    "name":             "loquat/loquat",
     "description":      "PHP Cli Framework",
-    "keywords":         ["php", "cli"],
+    "keywords":         ["php", "cli", "async"],
     "homepage":         "http://carrot.li/",
     "time":             "2016-12-17",
     "license":          "MIT",
