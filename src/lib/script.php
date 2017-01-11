@@ -88,9 +88,8 @@ abstract class Script{
 
     //初始化处理信号的函数
     protected function initSingalHandler(){
-       $t1= pcntl_signal(SIGHUP, array(&$this, 'signal_handler'));
-       $t2= pcntl_signal(SIGINT, array(&$this, 'signal_handler'));
-        var_dump($t1,$t2);
+        pcntl_signal(SIGHUP, array(&$this, 'signal_handler'));
+        pcntl_signal(SIGINT, array(&$this, 'signal_handler'));
 
     }
     //处理信号的函数
