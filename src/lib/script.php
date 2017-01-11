@@ -162,7 +162,6 @@ abstract class Script{
             $this->initLifeCycle();
 
             $this->dtdLockRes = $this->dtdLockHandle->lock($resource, $this->lifeCycle * 1000);
-            var_dump($this->dtdLockRes);
         }
 
     }
