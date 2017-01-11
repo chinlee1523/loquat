@@ -75,7 +75,6 @@ class DistributedLock
     {
         if (empty($this->instances)) {
             foreach ($this->config['servers'] as $server) {
-                print_r($server);
                 $redis = new \Redis();
                 if($server['keepalive']){
                     $redis->pconnect($server['ip'], $server['port'], $server['timeout']);
