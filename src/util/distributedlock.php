@@ -16,7 +16,6 @@ class DistributedLock
     private $instances = array();
     function __construct($config, $retryDelay = 200, $retryCount = 3)
     {
-        print_r($config);
         $this->config = $config;
         $this->retryDelay = $retryDelay;
         $this->retryCount = $retryCount;
