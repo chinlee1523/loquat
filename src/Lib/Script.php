@@ -95,7 +95,8 @@ abstract class Script{
     //处理信号的函数
     private function signal_handler(int $signo){
         //add log
-        $this->doExiting();
+        unset($this);
+        exit();
     }
 
     //进程退出时的处理
