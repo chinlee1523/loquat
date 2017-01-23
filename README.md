@@ -14,3 +14,6 @@ PHP可以用来做HTTP服务，也可以做异步服务（也就是通常说的�
 服务安装时的配置文件，需要配置上php，php.ini，以及服务的入口文件script.php。
 ###install.sh
 服务安装脚本，会把服务安装到crontab中。
+#应用示例
+###一个最简单的示例
+    php -c php7.ini script.php 'Example\E1'
