@@ -95,7 +95,6 @@ abstract class Script{
     //处理信号的函数
     protected function signal_handler(int $signo){
         //add log
-        unset($this);
         exit();
     }
 
